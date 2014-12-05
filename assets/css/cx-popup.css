@@ -1,0 +1,121 @@
+.box-tk-price {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    z-index: 99999;
+    background-color: #fff;
+    font-family: Microsoft YaHei;
+    color: #666;
+    display: none;
+}
+
+.box-tit {
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    background-color: #209bdf;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.box-tit a {
+    width: 35px;
+    height: 30px;
+    background: url(../image/wrong.jpg) no-repeat;
+    display: block;
+    float: right;
+    margin: 5px 5px 0 0;
+}
+
+.black-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+    background-color: #333;
+    z-index: 10000;
+    filter: alpha(opacity=50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+}
+
+.box-main {
+    text-align: center;
+}
+
+.box-main strong {
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    padding: 25px 0 5px;
+    line-height: 20px;
+}
+
+.box-main p {
+    font-size: 24px;
+}
+
+.box-main b {
+    font-size: 48px;
+    color: #e85b01;
+}
+
+.box-main span {
+    font-size: 16px;
+    display: block;
+}
+
+.box-main a {
+    width: 145px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #0074c9;
+    border-radius: 10px;
+    display: block;
+    font-size: 18px;
+    margin: 10px auto 0;
+}
+
+.box-main a:link, .box-main a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.box-main a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.box-main em {
+    width: 180px;
+    height: 45px;
+    line-height: 45px;
+    display: block;
+    color: #1f9bde;
+    font-size: 24px;
+    margin: 20px auto 0;
+    padding-left: 50px;
+}
+
+.box-icon-ok {
+    background: url(../image/happy.jpg) 40px -3px no-repeat;
+}
+
+.box-icon-unok {
+    background: url(../image/sad.jpg) 40px -3px no-repeat;
+}
+
+.ft-yow {
+    color: #eb7510;
+    font-size: 20px;
+}
+
+.ft-gray1 {
+    color: #acacac;
+}

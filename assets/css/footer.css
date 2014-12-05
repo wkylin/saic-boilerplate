@@ -1,0 +1,11 @@
+/*-- 底部 --*/
+.footer-group{ width:100%; height:230px; background-color:#efedee; margin-top:10px;}
+.footer-links{ width:800px; margin:0 auto; padding:0 100px;}
+.footer-links dl{ float:left; margin-right:65px; padding-top:20px;}
+.footer-links dt{ height:30px; line-height:30px; font-size:14px; font-weight:bold;}
+.footer-links dd{ height:25px; line-height:25px;}
+.ft-kf{ height:120px; font-size:18px; font-weight:bold; float:left; padding:10px 0 0 50px; margin:10px 0 20px;}
+.ft-kf strong{ display:block;}
+.foot-a:link,.foot-a:visited{ color:#939393; text-decoration:none;}
+.foot-a:hover{ color:#3da0e3; text-decoration:underline;}
+.ft-pcnter{ height:30px; line-height:30px; text-align:center; clear:both; color:#939393;}

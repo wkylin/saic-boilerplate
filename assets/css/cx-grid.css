@@ -1,0 +1,64 @@
+/**
+ * @name: 内容布局(20格栅格布局)
+ * @author: 二手车事业部 前端组
+ * @description: 下边有注释的为常用宽度
+ * @example: (相加为20，则页面宽度为990px)
+ * <div class="cx-content">
+ *     <div class="cx-grid>
+ *         <div class="cx-grid-4"></div>
+ *         <div class="cx-grid-16"></div>
+ *     </div>
+ * </div>
+ */
+.cx-grid{
+    width:990px;
+    margin:0 auto;
+}
+
+.cx-grid:after{
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+    zoom:1;
+}
+
+
+.cx-grid-1,.cx-grid-2,.cx-grid-3,
+.cx-grid-4,.cx-grid-5,.cx-grid-6,
+.cx-grid-7,.cx-grid-8,.cx-grid-9,
+.cx-grid-10,.cx-grid-11,.cx-grid-12,
+.cx-grid-13,.cx-grid-14,.cx-grid-15,
+.cx-grid-16,.cx-grid-17,.cx-grid-18,
+.cx-grid-19,.cx-grid-20 {
+    margin: 0 10px 10px 0;
+    float:left;
+    display:inline;
+}
+.cx-grid-1 {width:40px;}
+.cx-grid-2 {width:90px;}
+.cx-grid-3 {width:140px;}
+.cx-grid-4 {width:190px;} /* 右侧推广位的宽度 */
+.cx-grid-5 {width:240px;} /* 左侧边栏的宽度 */
+.cx-grid-6 {width:290px;}
+.cx-grid-7 {width:340px;}
+.cx-grid-8 {width:390px;}
+.cx-grid-9 {width:440px;}
+.cx-grid-10 {width:490px;}
+.cx-grid-11 {width:540px;}
+.cx-grid-12 {width:590px;} /* 中央区域宽度 */
+.cx-grid-13 {width:640px;}
+.cx-grid-14 {width:690px;}
+.cx-grid-15 {width:740px;}
+.cx-grid-16 {width:790px;}
+.cx-grid-17 {width:840px;}
+.cx-grid-18 {width:890px;}
+.cx-grid-19 {width:940px;}
+.cx-grid-20 {width:990px;} /* 最大页面宽度 */
+
+/* 最后一列清除右边距 */
+.cx-grid-last{
+    margin:0 0 10px 0;
+}

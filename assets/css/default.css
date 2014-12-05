@@ -1,0 +1,39 @@
+/**
+ * @name: 常用样式表 [default.css]
+ * @author: 二手车事业部 前端组
+ * @description:
+ */
+
+
+
+/* 清理浮动 */
+.cx-clear:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.cx-clear {
+    zoom: 1; /* for IE6 IE7 */
+}
+
+/* 隐藏, 通常用来与 JS 配合 */
+html body .cx-hide {
+    display: none;
+}
+
+/* 设置内联, 减少浮动带来的bug */
+.cx-left, .cx-right {
+    display: inline;
+}
+
+.cx-left {
+    float: left;
+}
+
+.cx-right {
+    float: right;
+}

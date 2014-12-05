@@ -1,0 +1,38 @@
+/**
+ * @name: 通用布局 [layout.css]
+ * @author: 二手车事业部 前端组
+ * @description:
+ * @dependent cx-grid.css
+ */
+
+
+/* 网站重大通知信息 */
+.cx-notice{
+    
+}
+
+
+/* 活动广告 */
+.cx-ads{
+
+}
+
+/* 网站 通用 头部 */
+.cx-header{
+
+}
+
+/* 通栏 banner */
+.cx-banner{
+
+}
+
+/* 网站主体内容 */
+.cx-container{
+    margin-bottom:20px;
+}
+
+/* 网站版权及相关链接 */
+.cx-footer{
+
+}

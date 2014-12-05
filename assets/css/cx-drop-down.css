@@ -1,0 +1,92 @@
+.cx-drop-down{
+    margin-left:10px;
+    float:left;
+    display:inline;
+}
+
+.drop-down-box {
+    margin: 0;
+    padding: 0;
+    width: 170px;
+    position: relative;
+    z-index:2;
+}
+
+
+.drop-button
+.drop-down-header {
+    width: 170px;
+}
+
+.drop-input {
+    border: 1px solid #ddd;
+    border-right: none;
+    padding: 4px 10px;
+    height: 22px;
+    line-height: 22px;
+    overflow: hidden;
+    width: 118px;
+    float:left;
+    display:inline;
+    background-color: #fff;
+}
+
+.drop-button {
+    float:right;
+    display:inline;
+    width: 13px;
+    height: 10px;
+    padding: 12px 8px 8px 8px;
+    border: 1px solid #ddd;
+    border-left-color: #ccc;
+    background-color: #f5f5f5;
+    display: block;
+    cursor: pointer;
+}
+
+.drop-arrow-down {
+    display: block;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #878787;
+    width: 0;
+}
+
+.drop-arrow-up {
+    display: block;
+    width: 0;
+    border-bottom: 6px solid #878787;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+}
+
+.down-option-list {
+
+    border: 1px solid #ddd;
+    border-top: none;
+    background-color:#fff;
+    position:absolute;
+    top: 32px;
+    left:0;
+    width:168px;
+    height:200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display:none;
+}
+
+.down-option-list .down-option-item{
+    padding:3px 0 3px 10px;
+    background-color:#fff;
+    color:#000;
+    cursor:pointer;
+}
+
+.down-option-list .down-option-active{
+    background-color:#ccc;
+}
+
+.drop-down-disabled .drop-input,
+.drop-down-disabled .drop-button{
+    background-color:#eee;
+}
