@@ -1,24 +1,20 @@
 {
-  "name": "GruntJs",
+  "name": "saic-boilerplate",
   "version": "0.0.0",
-  "description": "GruntJs",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "saic boilerplate",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wkylin/GruntJs.git"
+    "url": "https://github.com/wkylin/saic-boilerplate.git"
   },
   "keywords": [
-    "GruntJs"
+    "saic boilerplate grunt yeoman bower"
   ],
-  "author": "wkylin",
+  "author": "SAIC",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wkylin/GruntJs/issues"
+    "url": "https://github.com/wkylin/saic-boilerplate/issues"
   },
-  "homepage": "https://github.com/wkylin/GruntJs",
+  "homepage": "https://github.com/wkylin/saic-boilerplate",
   "devDependencies": {
     "connect-livereload": "^0.4.0",
     "grunt": "^0.4.5",
