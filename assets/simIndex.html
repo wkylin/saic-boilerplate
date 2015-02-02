@@ -1,0 +1,238 @@
+@@include('include/doctype.html')
+
+<!-- build:css css/indexSim.min.css -->
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/default.css" />
+<link rel="stylesheet" href="css/layout.css" />
+<link rel="stylesheet" href="css/cx-grid.css" />
+<link rel="stylesheet" href="css/index.css" />
+<link rel="stylesheet" href="css/cx-tabs.css" />
+<link rel="stylesheet" href="css/cx-button.css" />
+<link rel="stylesheet" href="css/cx-drop-down.css" />
+<link rel="stylesheet" href="css/cx-popup.css" />
+<link rel="stylesheet" href="css/footer.css" />
+<!-- endbuild -->
+
+@@include('include/header.html')
+
+</div>
+<!-- /header -->
+<!-- cx-container -->
+<div class="cx-container">
+    <div class="cx-grid">
+
+        <!-- cx-tabs -->
+        <div class="cx-tabs cx-tabs-box" id="J_tabsBox">
+            <div class="cx-tabs-trigger">
+                <ul class="cx-trigger-list cx-clear">
+                    <li class="cx-trigger-item cx-trigger-current " data-select-type="0"><span>竞价中<em>18</em></span>
+                    </li>
+                    <li class="cx-trigger-item" data-select-type="1"><span>即将开始<em>8</em></span></li>
+                    <li class="cx-trigger-item" data-select-type="2"><span>今日结束拍品<em>10</em></span></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 筛选条件 -->
+        <div class="cx-select-box">
+            <div class="cx-select-result cx-clear">
+
+                <div class="cx-flex-box cx-clear">
+                    <div class="cx-flex-left">
+                        <div class="select-title">您已选择</div>
+                    </div>
+                    <div class="cx-flex-right">
+                        <dl>
+                            <dd class="select-no">不限</dd>
+                            <dd class="del-select">全部清除</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <ul class="cx-select-list">
+                <li class="cx-select-item cx-clear">
+                    <div class="cx-box cx-clear">
+                        <div class="cx-left">
+                            <div class="select-title">车型</div>
+                        </div>
+                        <div class="cx-left">
+                            <div class="cx-box cx-clear">
+                                <div class="cx-left">
+                                    <div class="select-all selected" data-name="brand" data-item="select0item0">
+                                        <span>不限</span></div>
+                                </div>
+                                <div class="cx-left">
+                                    <div class="cx-drop-down drop-down-brand" id="select0">
+                                        <div class="drop-down-box">
+                                            <div class="drop-down-header">
+                                                <div class="drop-input">不限</div>
+                                                <span class="drop-button">
+                                                    <i class="drop-arrow-down"></i>
+                                                </span>
+                                            </div>
+                                            <ul class="down-option-list">
+                                                <li class="down-option-item" data-option-val="0" data-option-name="brand" data-option-item="select0item1">兰博基尼</li>
+                                                <li class="down-option-item" data-option-val="1" data-option-name="brand" data-option-item="select0item2">别克</li>
+                                                <li class="down-option-item" data-option-val="2" data-option-name="brand" data-option-item="select0item3">大众</li>
+                                                <li class="down-option-item" data-option-val="3" data-option-name="brand" data-option-item="select0item4">荣威</li>
+                                                <li class="down-option-item" data-option-val="4" data-option-name="brand" data-option-item="select0item5">雪佛兰</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="cx-drop-down drop-down-series">
+                                        <div class="drop-down-box drop-down-disabled">
+                                            <div class="drop-down-header ">
+                                                <div class="drop-input">不限</div>
+                                                <span class="drop-button">
+                                                    <i class="drop-arrow-down"></i>
+                                                </span>
+                                            </div>
+                                            <ul class="down-option-list"></ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="cx-select-item cx-clear">
+                    <div class="cx-box cx-clear">
+                        <div class="cx-left">
+                            <div class="select-title">所在地</div>
+                        </div>
+                        <div class="cx-left">
+                            <div class="cx-box cx-clear">
+                                <div class="cx-left">
+                                    <div class="select-all selected" data-name="district" data-item="select1item0">
+                                        <span>不限</span></div>
+                                </div>
+                                <div class="cx-left">
+                                    <dl id="select1">
+                                        <dd data-name="distric" data-city="011" data-item="select1item1"><span>北京</span>
+                                        </dd>
+                                        <dd data-name="distr" data-city="022" data-item="select1item2"><span>上海</span>
+                                        </dd>
+                                        <dd data-name="dis" data-city="033" data-item="select1item3"><span>南京</span>
+                                        </dd>
+                                        <dd data-name="distric" data-city="011" data-item="select1item1"><span>北京</span>
+                                        </dd>
+                                        <dd data-name="distr" data-city="022" data-item="select1item2"><span>上海</span>
+                                        </dd>
+                                        <dd data-name="dis" data-city="033" data-item="select1item3"><span>南京</span>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="cx-select-item cx-clear">
+                    <div class="cx-box cx-clear">
+                        <div class="cx-left">
+                            <div class="select-title">年限</div>
+                        </div>
+                        <div class="cx-left">
+
+                            <div class="cx-box cx-clear">
+                                <div class="cx-left">
+                                    <div class="select-all selected" data-name="nmxm0" data-item="select2item0">
+                                        <span>不限</span></div>
+                                </div>
+                                <div class="cx-left">
+                                    <dl id="select2" class="select-dl">
+                                        <dd data-name="nmxm1" data-item="select2item1">
+                                            <span>2年以下</span> <em></em>
+                                        </dd>
+                                        <dd data-name="nmxm2" data-item="select2item2">
+                                            <span>2-5年</span> <em></em>
+                                        </dd>
+                                        <dd data-name="nmxm3" data-item="select2item3">
+                                            <span>5-8年</span> <em></em>
+                                        </dd>
+                                        <dd data-name="nmxm4" data-item="select2item4">
+                                            <span>8-10年</span> <em></em>
+                                        </dd>
+                                        <dd data-name="nmxm5" data-item="select2item5">
+                                            <span>10年以上</span> <em></em>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </li>
+                <li class="cx-select-item cx-clear">
+                    <div class="cx-box cx-clear">
+                        <div class="cx-left">
+                            <div class="select-title">价格</div>
+                        </div>
+                        <div class="cx-left">
+                            <div class="cx-box cx-clear">
+                                <div class="cx-left">
+                                    <div class="select-all selected" data-name="price0" data-item="select3item0">
+                                        <span>不限</span></div>
+                                </div>
+                                <div class="cx-left">
+                                    <dl id="select3" class="select-dl">
+                                        <dd data-name="price1" data-item="select3item1">
+                                            <span>3万以下</span> <em></em>
+                                        </dd>
+                                        <dd data-name="price2" data-item="select3item2">
+                                            <span>3-5万</span> <em></em>
+                                        </dd>
+                                        <dd data-name="price3" data-item="select3item3">
+                                            <span>5-10万</span> <em></em>
+                                        </dd>
+                                        <dd data-name="price4" data-item="select3item4">
+                                            <span>10-20万</span> <em></em>
+                                        </dd>
+                                        <dd data-name="price5" data-item="select3item5">
+                                            <span>20万以上</span> <em></em>
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="cx-select-item cx-clear">
+                    <div class="cx-box cx-clear">
+                        <div class="cx-left">
+                            <div class="select-title">牌照地</div>
+                        </div>
+                        <div class="cx-left">
+                            <div class="cx-box cx-clear">
+                                <div class="cx-left">
+                                    <div class="select-all selected" data-name="license" data-item="select4item0">
+                                        <span>不限</span></div>
+                                </div>
+                                <div class="cx-left">
+                                    <dl id="select4">
+                                        <dd data-name="license" data-item="select4item1"><span>京</span></dd>
+                                        <dd data-name="license" data-item="select4item2"><span>沪</span></dd>
+                                        <dd data-name="license" data-item="select4item3"><span>鲁</span></dd>
+                                        <dd data-name="license" data-item="select4item4"><span>苏</span></dd>
+                                        <dd data-name="license" data-item="select4item5"><span>浙</span></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+@@include('include/footer.html')
+
+<!-- build:js js/indexSim.min.js -->
+<script type="text/javascript" src="js/vendor/jquery-1.11.1.js"></script>
+<script type="text/javascript" src="js/jquery.multi-query.js"></script>
+<script type="text/javascript" src="js/jquery.smart.float.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<!-- endbuild -->
+
+</body>
+</html>

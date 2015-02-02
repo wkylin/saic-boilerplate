@@ -143,14 +143,14 @@ module.exports = function (grunt) {
             copyJson:{
                 expand: true,
                 cwd: '<%= paths.js %>',
-                src: ['query.json'],
+                src: ['query.json','drop.json'],
                 dest: '<%= buildPaths.build %>/assets/js',
                 flatten: true,
                 filter: 'isFile'
             }
         },
         useminPrepare: {
-            html: ['assets/index.html'],
+            html: ['assets/*.html'],
             options: {
                 dest: 'build/assets'
             }
@@ -165,10 +165,18 @@ module.exports = function (grunt) {
                     collapseWhitespace: true
                 },
 
+                //files: [
+                //    {
+                //        expand: true,
+                //        cwd: '<%= paths.assets %>',
+                //        src: ['**/*.html'],
+                //        dest: '<%= buildPaths.build %>'
+                //    }
+                //]
                 files: [
                     {
                         expand: true,
-                        cwd: '<%= paths.assets %>',
+                        cwd: '<%= buildPaths.build %>',
                         src: ['**/*.html'],
                         dest: '<%= buildPaths.build %>'
                     }
@@ -369,7 +377,7 @@ module.exports = function (grunt) {
                     prefix: '@@',
                     suffix: ''
                 },
-                src: 'assets/index.html',
+                src: 'assets/*.html',
                 dest: 'build/'
             }
         },
@@ -431,5 +439,5 @@ module.exports = function (grunt) {
     grunt.registerTask('live', ['connect', 'watch']);
 
     //Prd
-    grunt.registerTask('prd', ['clean:build','copy:copyHtml','copy:images','includereplace','useminPrepare','concat:generated','uglify:generated','cssmin:generated', 'rev','usemin','copy:copyJson','clean:delTmp','clean:delInclude']);
+    grunt.registerTask('prd', ['clean:build','copy:copyHtml','copy:images','includereplace','useminPrepare','concat:generated','uglify:generated','cssmin:generated', 'rev','usemin','copy:copyJson','clean:delTmp','clean:delInclude','htmlmin']);
 };
