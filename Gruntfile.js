@@ -439,5 +439,20 @@ module.exports = function (grunt) {
     grunt.registerTask('live', ['connect', 'watch']);
 
     //Prd
-    grunt.registerTask('prd', ['clean:build','copy:copyHtml','copy:images','includereplace','useminPrepare','concat:generated','uglify:generated','cssmin:generated', 'rev','usemin','copy:copyJson','clean:delTmp','clean:delInclude','htmlmin']);
+    grunt.registerTask('prd', [
+        'clean:build',
+        'copy:copyHtml',
+        'copy:images',
+        'includereplace',
+        'useminPrepare',
+        'concat:generated',
+        'uglify:generated',
+        'cssmin:generated',
+        'rev',
+        'usemin',
+        'copy:copyJson',
+        'clean:delTmp',
+        'clean:delInclude',
+        'htmlmin'
+    ]);
 };

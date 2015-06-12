@@ -11,6 +11,9 @@
 <script type="text/javascript">
     $(document).ready(function () {
 
+        //push notice
+        var intervalTimer = null;
+
         //关注区
         $("#J_sFixed").smartFloat();
         $("#J_tabsBorder").on("click", ".cx-trigger-item", function () {
@@ -20,8 +23,7 @@
         });
 
 
-        //push notice
-        var intervalTimer = null;
+
         $(".push-notice").hover(function () {
             clearInterval(intervalTimer);
         }, function () {
